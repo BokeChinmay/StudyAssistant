@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "dHOYUjSbV7I=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\chinm\\StudyAssistant\\StudyAssistant.Api\\StudyAssistant.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\chinm\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.0\\microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
+    "C:\\Users\\chinm\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
