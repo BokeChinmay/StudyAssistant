@@ -1,39 +1,52 @@
 ﻿@page "/"
 @inject HttpClient Http
 @using Markdig
+@using StudyAssistant.Web.Models
+@using StudyAssistant.Web.Services
+@using StudyAssistant.Web.Components
 
 <div class="chat-wrap">
-    <div class="mode-bar">
-        <span class="mode-label">Session: @_sessionId[..8]…</span>
-        <div class="mode-hints">
-            <span class="hint">Try: "explain recursion"</span>
-            <span class="hint">or: "make flashcards on photosynthesis"</span>
-            <span class="hint">or: "quiz me on WW2"</span>
-        </div>
+    <div class="stats-bar">
+        <span class="stat"><i>💬</i> @_stats.MessageCount msgs</span>
+        <span class="stat"><i>🃏</i> @_stats.FlashcardSets sets</span>
+        <span class="stat"><i>🎯</i> @_stats.QuizCorrect / @_stats.QuizTotal quiz</span>
+        <span class="mode-badge mode-@_stats.ActiveMode.ToLower()">@_stats.ActiveMode</span>
+    </div>
+
+    <div class="mode-hints">
+        <span class="hint">explain a concept</span>
+        <span class="hint">make flashcards on [topic]</span>
+        <span class="hint">quiz me on [topic]</span>
     </div>
 
     <div class="messages" id="msgList">
         @foreach (var msg in _messages)
         {
             <div class="msg @msg.Role">
-                <div class="bubble">
-                    @if (msg.Role == "assistant")
-                    {
-                        @((MarkupString)RenderMarkdown(msg.Content))
-                    }
-                    else
-                    {
-                        @msg.Content
-                    }
-                </div>
+                @if (msg.DeckState != null)
+                {
+                    <FlashcardDeck State="msg.DeckState"
+                                   OnStateChanged="s => { msg.DeckState = s; StateHasChanged(); }" />
+                }
+                else
+                {
+                    <div class="bubble">
+                        @if (msg.Role == "assistant")
+                        {
+                            @((MarkupString)RenderMarkdown(msg.Content))
+                        }
+                        else
+                        {
+                            @msg.Content
+                        }
+                    </div>
+                }
             </div>
         }
         @if (!string.IsNullOrEmpty(_streamBuffer))
         {
             <div class="msg assistant">
-                <div class="bubble">
-                    @((MarkupString)RenderMarkdown(_streamBuffer))
-                </div>
+                <div class="bubble">@((MarkupString)RenderMarkdown(_streamBuffer))</div>
             </div>
         }
         @if (_isStreaming && string.IsNullOrEmpty(_streamBuffer))
@@ -62,6 +75,7 @@
     private bool _isStreaming = false;
     private string _sessionId = Guid.NewGuid().ToString();
     private List<ChatMessage> _messages = new();
+    private SessionStats _stats = new();
 
     private string RenderMarkdown(string text)
     {
@@ -87,11 +101,7 @@
 
         try
         {
-            var payload = new
-            {
-                Message = userMsg,
-                SessionId = _sessionId
-            };
+            var payload = new { Message = userMsg, SessionId = _sessionId };
 
             using var request = new HttpRequestMessage(HttpMethod.Post, "api/chat/stream")
             {
@@ -111,12 +121,34 @@
                 var token = line[6..];
                 if (token == "[DONE]") break;
 
-                _streamBuffer += token.Replace("\\n", "\n").Replace("\\r", "\r");
+                _streamBuffer += token.Replace("\\n", "\n");
                 StateHasChanged();
             }
 
             if (!string.IsNullOrEmpty(_streamBuffer))
-                _messages.Add(new ChatMessage("assistant", _streamBuffer));
+            {
+                // Detect flashcard responses and swap to deck component
+                if (FlashcardParser.IsFlashcardResponse(_streamBuffer))
+                {
+                    var cards = FlashcardParser.Parse(_streamBuffer);
+                    if (cards.Count > 0)
+                    {
+                        var deck = new FlashcardDeckState();
+                        deck.Cards.AddRange(cards);
+                        _messages.Add(new ChatMessage("assistant", _streamBuffer, deck));
+                    }
+                    else
+                    {
+                        _messages.Add(new ChatMessage("assistant", _streamBuffer));
+                    }
+                }
+                else
+                {
+                    _messages.Add(new ChatMessage("assistant", _streamBuffer));
+                }
+            }
+
+            await RefreshStats();
         }
         catch (Exception ex)
         {
@@ -130,5 +162,38 @@
         }
     }
 
-    private record ChatMessage(string Role, string Content);
+    private async Task RefreshStats()
+    {
+        try
+        {
+            var result = await Http.GetFromJsonAsync<SessionStats>(
+                $"api/stats/{_sessionId}");
+            if (result != null) _stats = result;
+            StateHasChanged();
+        }
+        catch { }
+    }
+
+    private class ChatMessage
+    {
+        public string Role { get; }
+        public string Content { get; }
+        public FlashcardDeckState? DeckState { get; set; }
+
+        public ChatMessage(string role, string content, FlashcardDeckState? deck = null)
+        {
+            Role = role;
+            Content = content;
+            DeckState = deck;
+        }
+    }
+
+    private class SessionStats
+    {
+        public int MessageCount { get; set; }
+        public int QuizCorrect { get; set; }
+        public int QuizTotal { get; set; }
+        public int FlashcardSets { get; set; }
+        public string ActiveMode { get; set; } = "General";
+    }
 }

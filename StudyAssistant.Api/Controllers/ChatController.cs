@@ -25,8 +25,27 @@ public class ChatController : ControllerBase
         Response.ContentType = "text/event-stream";
         Response.Headers["Cache-Control"] = "no-cache";
 
-        var mode = _conversation.DetectMode(request.Message);
         var session = _conversation.GetOrCreate(request.SessionID);
+        var detected = _conversation.DetectMode(request.Message);
+
+        StudyMode mode;
+
+        if(detected == StudyMode.Flashcards || detected == StudyMode.Quiz) {
+            mode = detected;
+
+            if(detected == StudyMode.Quiz) session.QuizActive = false;
+        } 
+        else if (_conversation.IsExitRequest(request.Message)) {
+            mode = StudyMode.General;
+            session.QuizActive = false;
+        }
+        else if(session.ActiveMode == StudyMode.Quiz && !_conversation.IsGeneralQuestion(request.Message)) {
+            mode = StudyMode.Quiz;
+        }
+        else {
+            mode = StudyMode.General;
+        }
+
         session.ActiveMode = mode;
 
         _conversation.AddMessage(request.SessionID, "user", request.Message);
@@ -88,6 +107,42 @@ public class ChatController : ControllerBase
                 }
             }
             catch (JsonException) { continue; }
+        }
+
+        if(mode == StudyMode.Quiz) {
+            if(!session.QuizActive) {
+                session.QuizActive = true;
+            }
+            else {
+                var lower = fullResponse.ToString().ToLower();
+                var isCorrect = lower.Contains("that's right") ||
+                                lower.Contains("thats right") ||
+                                lower.Contains("well done") ||
+                                lower.Contains("exactly right") ||
+                                lower.Contains("that is correct") ||
+                                lower.Contains("you're correct") ||
+                                lower.Contains("youre correct") ||
+                                lower.Contains("yes, correct") ||
+                                lower.Contains("yes! correct");
+                var isIncorrect = lower.Contains("incorrect") ||
+                                  lower.Contains("not quite") ||
+                                  lower.Contains("that's not right") ||
+                                  lower.Contains("thats not right") ||
+                                  lower.Contains("not right") ||
+                                  lower.Contains("wrong") ||
+                                  lower.Contains("that is incorrect") ||
+                                  lower.Contains("not correct");
+
+                if(isCorrect || isIncorrect) {
+                    session.QuizTotal++;
+                    if(isCorrect && !isIncorrect) session.QuizCorrect++;
+                }
+            }    
+        }
+ 
+        if(mode == StudyMode.Flashcards) {
+            _conversation.IncrementFlashcardSets(request.SessionID);
+            session.ActiveMode = StudyMode.General;
         }
 
         _conversation.AddMessage(request.SessionID, "assistant", fullResponse.ToString());

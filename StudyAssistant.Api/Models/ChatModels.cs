@@ -7,6 +7,10 @@ public class ConversationSession{
     public List<ChatMessage> Messages { get; } = new();
     public StudyMode ActiveMode { get; set; } = StudyMode.General;
     public DateTime LastActivity { get; set; } = DateTime.UtcNow;
+    public int QuizCorrect { get; set; } = 0;
+    public int QuizTotal { get; set; } = 0;
+    public bool QuizActive { get; set; } = false;
+    public int FlashcardSetsGenerated { get; set; } = 0;
 }
 
 public enum StudyMode{

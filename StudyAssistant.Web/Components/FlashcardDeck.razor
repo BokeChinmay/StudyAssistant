@@ -1,0 +1,104 @@
+@using StudyAssistant.Web.Models
+
+<div class="deck-wrap">
+    <div class="deck-header">
+        <span class="deck-count">@(State.CurrentIndex + 1) of @State.Cards.Count</span>
+        <div class="deck-progress">
+            @for (int i = 0; i < State.Cards.Count; i++)
+            {
+                var idx = i;
+                <div class="pip @(idx == State.CurrentIndex ? "active" : "") @(State.MarkedForReview.Contains(idx) ? "review" : "")"></div>
+            }
+        </div>
+        <span class="review-count">
+            @if (State.MarkedForReview.Count > 0)
+            {
+                <span>@State.MarkedForReview.Count to review</span>
+            }
+        </span>
+    </div>
+
+    <div class="card-scene" @onclick="Flip">
+        <div class="card-inner @(State.IsFlipped ? "flipped" : "")">
+            <div class="card-face card-front">
+                <div class="card-label">Question</div>
+                <div class="card-text">@State.Current.Question</div>
+                <div class="card-hint">tap to reveal</div>
+            </div>
+            <div class="card-face card-back">
+                <div class="card-label">Answer</div>
+                <div class="card-text">@State.Current.Answer</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="deck-controls">
+        <button @onclick="Previous" disabled="@(!State.HasPrevious)">
+            ← Prev
+        </button>
+        <button class="review-btn @(State.MarkedForReview.Contains(State.CurrentIndex) ? "marked" : "")"
+                @onclick="ToggleReview">
+            @(State.MarkedForReview.Contains(State.CurrentIndex) ? "★ Marked" : "☆ Review")
+        </button>
+        <button @onclick="Next" disabled="@(!State.HasNext)">
+            Next →
+        </button>
+    </div>
+
+    @if (!State.HasNext && State.MarkedForReview.Count > 0)
+    {
+        <div class="review-prompt">
+            <span>@State.MarkedForReview.Count card(s) marked for review.</span>
+            <button @onclick="StartReview">Review them now</button>
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter] public FlashcardDeckState State { get; set; } = new();
+    [Parameter] public EventCallback<FlashcardDeckState> OnStateChanged { get; set; }
+
+    private async Task Flip()
+    {
+        State.IsFlipped = !State.IsFlipped;
+        await OnStateChanged.InvokeAsync(State);
+    }
+
+    private async Task Next()
+    {
+        if (!State.HasNext) return;
+        State.CurrentIndex++;
+        State.IsFlipped = false;
+        await OnStateChanged.InvokeAsync(State);
+    }
+
+    private async Task Previous()
+    {
+        if (!State.HasPrevious) return;
+        State.CurrentIndex--;
+        State.IsFlipped = false;
+        await OnStateChanged.InvokeAsync(State);
+    }
+
+    private async Task ToggleReview()
+    {
+        if (!State.MarkedForReview.Remove(State.CurrentIndex))
+            State.MarkedForReview.Add(State.CurrentIndex);
+        await OnStateChanged.InvokeAsync(State);
+    }
+
+    private async Task StartReview()
+    {
+        var reviewCards = State.MarkedForReview
+            .OrderBy(i => i)
+            .Select(i => State.Cards[i])
+            .ToList();
+
+        State.Cards.Clear();
+        State.Cards.AddRange(reviewCards);
+        State.MarkedForReview.Clear();
+        State.CurrentIndex = 0;
+        State.IsFlipped = false;
+        await OnStateChanged.InvokeAsync(State);
+    }
+}

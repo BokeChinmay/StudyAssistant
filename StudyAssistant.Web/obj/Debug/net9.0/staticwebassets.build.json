@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vjcoI9iZn5vg1irV4GpZIkBrKoumHk/+nY5kRspbO6c=",
+  "Hash": "afX6v9p/VJTw0nT5XOH9ctNWOPTF/papYAKK3mU0Zlc=",
   "Source": "StudyAssistant.Web",
   "BasePath": "/",
   "Mode": "Root",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "23waixejba",
-      "Integrity": "7ta4JSF18Pd4Bx43hdxk/hDJn1lmAF/GvCqI1CUs0rw=",
+      "Fingerprint": "4y8448n1ii",
+      "Integrity": "tKUezeX30VGmUEgljwSc86d25G9yJDMznWM5//kVltA=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\blazor.boot.json"
@@ -892,8 +892,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "nlfadd3pxw",
-      "Integrity": "e16RSNBjursNQQVFqLJlj7DdvXnBeMkfLIPVmq6TsCo=",
+      "Fingerprint": "p6uln0um29",
+      "Integrity": "75y/DJ9s7VewWOugQWBXuRYZQkZ/brmyPOJqTiZq5XA=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\StudyAssistant.Web.pdb"
@@ -913,8 +913,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "h5oj11hhex",
-      "Integrity": "BZZmF0SqD3cT7em3wSp4IgE8SF6vGMGr/ZCqWI4ParQ=",
+      "Fingerprint": "09gygg4dut",
+      "Integrity": "PKm7IJwOB5DtcpLAeYuYJUUAZvN6e6HoKn7b5XlWuEA=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\webcil\\StudyAssistant.Web.wasm"
@@ -4742,12 +4742,12 @@
       "OriginalItemSpec": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Drawing.wasm"
     },
     {
-      "Identity": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\2pxmo48srx-vd8zrqfalf.gz",
+      "Identity": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\2pxmo48srx-d2bgbzo6tw.gz",
       "SourceId": "StudyAssistant.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "css/app#[.{fingerprint=vd8zrqfalf}]?.css.gz",
+      "RelativePath": "css/app#[.{fingerprint=d2bgbzo6tw}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -4756,8 +4756,8 @@
       "RelatedAsset": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\wwwroot\\css\\app.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "ukg3syubec",
-      "Integrity": "UoUnNTyehCXDFYQpdeqNnjpWZ4SSyxN0GUtYUzbaeIU=",
+      "Fingerprint": "8ehk8u30pm",
+      "Integrity": "8PoGf5e7JPm7EzoOaVbeSwXb+IB+kPo88IWhOsQ+8Mo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\wwwroot\\css\\app.css"
@@ -5309,12 +5309,12 @@
       "OriginalItemSpec": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Private.CoreLib.wasm"
     },
     {
-      "Identity": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\63rt9u1i9a-h5oj11hhex.gz",
+      "Identity": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\63rt9u1i9a-09gygg4dut.gz",
       "SourceId": "StudyAssistant.Web",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/StudyAssistant.Web#[.{fingerprint=h5oj11hhex}]!.wasm.gz",
+      "RelativePath": "_framework/StudyAssistant.Web#[.{fingerprint=09gygg4dut}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -5323,8 +5323,8 @@
       "RelatedAsset": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\StudyAssistant.Web.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "flxko2w5z1",
-      "Integrity": "7XhUF5E8NiW3T0V4coP8srUSWsZmLNLL8zXJSAUNGFg=",
+      "Fingerprint": "on91fzm50x",
+      "Integrity": "3J3joJRRSW3sbI1g8rhqUT0teXIDLSamfQPZMzfLF60=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\StudyAssistant.Web.wasm"
@@ -6254,12 +6254,12 @@
       "OriginalItemSpec": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Dynamic.Runtime.wasm"
     },
     {
-      "Identity": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\bufzqxrbwr-nlfadd3pxw.gz",
+      "Identity": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\bufzqxrbwr-p6uln0um29.gz",
       "SourceId": "StudyAssistant.Web",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/StudyAssistant.Web#[.{fingerprint=nlfadd3pxw}]!.pdb.gz",
+      "RelativePath": "_framework/StudyAssistant.Web#[.{fingerprint=p6uln0um29}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -6268,8 +6268,8 @@
       "RelatedAsset": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\StudyAssistant.Web.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "umm126ax6f",
-      "Integrity": "1iJDt+QKv+UOWdhlmrtsrR8mSjgG2fzyjL24m3L0gnw=",
+      "Fingerprint": "ijqqgyya53",
+      "Integrity": "3oDWztIBzEBxT3hLqveXgxgfQQO3bA5SUUhwk/o7xnc=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\StudyAssistant.Web.pdb"
@@ -7010,7 +7010,7 @@
       "OriginalItemSpec": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\hk5q2gf9vt-23waixejba.gz",
+      "Identity": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\hk5q2gf9vt-4y8448n1ii.gz",
       "SourceId": "StudyAssistant.Web",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\",
@@ -7024,8 +7024,8 @@
       "RelatedAsset": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "63sb6fj1q0",
-      "Integrity": "8jRoFHGUFFE24xr44stC38zo+u28yiDlROZPRWjnk3g=",
+      "Fingerprint": "m8ts144gjy",
+      "Integrity": "+gvcDWlyJ3+K6qcOXSyNWBBqrk2mFAnd4gXsUk02VUs=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -9712,8 +9712,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "vd8zrqfalf",
-      "Integrity": "MygTlfDlx2MKxH7pvrfibWGxxsyy4WvEUdLfhSUOSEU=",
+      "Fingerprint": "d2bgbzo6tw",
+      "Integrity": "BfNlcnUGR1dhoGQbh1DiJ2ooOYH9b7Y2PT4l9/hEWOw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\app.css"
@@ -10747,11 +10747,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"7ta4JSF18Pd4Bx43hdxk/hDJn1lmAF/GvCqI1CUs0rw=\""
+          "Value": "\"tKUezeX30VGmUEgljwSc86d25G9yJDMznWM5//kVltA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 May 2026 16:57:36 GMT"
+          "Value": "Mon, 18 May 2026 17:56:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10761,18 +10761,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-7ta4JSF18Pd4Bx43hdxk/hDJn1lmAF/GvCqI1CUs0rw="
+          "Value": "sha256-tKUezeX30VGmUEgljwSc86d25G9yJDMznWM5//kVltA="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\hk5q2gf9vt-23waixejba.gz",
+      "AssetFile": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\hk5q2gf9vt-4y8448n1ii.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000080755875"
+          "Quality": "0.000080762397"
         }
       ],
       "ResponseHeaders": [
@@ -10782,15 +10782,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12382"
+          "Value": "12381"
         },
         {
           "Name": "ETag",
-          "Value": "\"8jRoFHGUFFE24xr44stC38zo+u28yiDlROZPRWjnk3g=\""
+          "Value": "\"+gvcDWlyJ3+K6qcOXSyNWBBqrk2mFAnd4gXsUk02VUs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 May 2026 16:45:51 GMT"
+          "Value": "Mon, 18 May 2026 17:46:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10810,19 +10810,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"7ta4JSF18Pd4Bx43hdxk/hDJn1lmAF/GvCqI1CUs0rw=\""
+          "Value": "W/\"tKUezeX30VGmUEgljwSc86d25G9yJDMznWM5//kVltA=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-7ta4JSF18Pd4Bx43hdxk/hDJn1lmAF/GvCqI1CUs0rw="
+          "Value": "sha256-tKUezeX30VGmUEgljwSc86d25G9yJDMznWM5//kVltA="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\hk5q2gf9vt-23waixejba.gz",
+      "AssetFile": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\hk5q2gf9vt-4y8448n1ii.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10831,7 +10831,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12382"
+          "Value": "12381"
         },
         {
           "Name": "Content-Type",
@@ -10839,11 +10839,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8jRoFHGUFFE24xr44stC38zo+u28yiDlROZPRWjnk3g=\""
+          "Value": "\"+gvcDWlyJ3+K6qcOXSyNWBBqrk2mFAnd4gXsUk02VUs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 May 2026 16:45:51 GMT"
+          "Value": "Mon, 18 May 2026 17:46:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10861,7 +10861,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-8jRoFHGUFFE24xr44stC38zo+u28yiDlROZPRWjnk3g="
+          "Value": "sha256-+gvcDWlyJ3+K6qcOXSyNWBBqrk2mFAnd4gXsUk02VUs="
         }
       ]
     },
@@ -22625,7 +22625,7 @@
       ]
     },
     {
-      "Route": "_framework/StudyAssistant.Web.h5oj11hhex.wasm",
+      "Route": "_framework/StudyAssistant.Web.09gygg4dut.wasm",
       "AssetFile": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\StudyAssistant.Web.wasm",
       "Selectors": [],
       "ResponseHeaders": [
@@ -22635,7 +22635,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "28437"
+          "Value": "41237"
         },
         {
           "Name": "Content-Type",
@@ -22643,11 +22643,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"BZZmF0SqD3cT7em3wSp4IgE8SF6vGMGr/ZCqWI4ParQ=\""
+          "Value": "\"PKm7IJwOB5DtcpLAeYuYJUUAZvN6e6HoKn7b5XlWuEA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 May 2026 16:57:36 GMT"
+          "Value": "Mon, 18 May 2026 17:46:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22657,7 +22657,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "h5oj11hhex"
+          "Value": "09gygg4dut"
         },
         {
           "Name": "label",
@@ -22665,18 +22665,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-BZZmF0SqD3cT7em3wSp4IgE8SF6vGMGr/ZCqWI4ParQ="
+          "Value": "sha256-PKm7IJwOB5DtcpLAeYuYJUUAZvN6e6HoKn7b5XlWuEA="
         }
       ]
     },
     {
-      "Route": "_framework/StudyAssistant.Web.h5oj11hhex.wasm",
-      "AssetFile": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\63rt9u1i9a-h5oj11hhex.gz",
+      "Route": "_framework/StudyAssistant.Web.09gygg4dut.wasm",
+      "AssetFile": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\63rt9u1i9a-09gygg4dut.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000078963992"
+          "Quality": "0.000056173464"
         }
       ],
       "ResponseHeaders": [
@@ -22686,15 +22686,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12663"
+          "Value": "17801"
         },
         {
           "Name": "ETag",
-          "Value": "\"7XhUF5E8NiW3T0V4coP8srUSWsZmLNLL8zXJSAUNGFg=\""
+          "Value": "\"3J3joJRRSW3sbI1g8rhqUT0teXIDLSamfQPZMzfLF60=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 May 2026 16:57:36 GMT"
+          "Value": "Mon, 18 May 2026 17:46:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22714,13 +22714,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"BZZmF0SqD3cT7em3wSp4IgE8SF6vGMGr/ZCqWI4ParQ=\""
+          "Value": "W/\"PKm7IJwOB5DtcpLAeYuYJUUAZvN6e6HoKn7b5XlWuEA=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "h5oj11hhex"
+          "Value": "09gygg4dut"
         },
         {
           "Name": "label",
@@ -22728,13 +22728,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-BZZmF0SqD3cT7em3wSp4IgE8SF6vGMGr/ZCqWI4ParQ="
+          "Value": "sha256-PKm7IJwOB5DtcpLAeYuYJUUAZvN6e6HoKn7b5XlWuEA="
         }
       ]
     },
     {
-      "Route": "_framework/StudyAssistant.Web.h5oj11hhex.wasm.gz",
-      "AssetFile": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\63rt9u1i9a-h5oj11hhex.gz",
+      "Route": "_framework/StudyAssistant.Web.09gygg4dut.wasm.gz",
+      "AssetFile": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\63rt9u1i9a-09gygg4dut.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22743,7 +22743,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12663"
+          "Value": "17801"
         },
         {
           "Name": "Content-Type",
@@ -22751,11 +22751,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"7XhUF5E8NiW3T0V4coP8srUSWsZmLNLL8zXJSAUNGFg=\""
+          "Value": "\"3J3joJRRSW3sbI1g8rhqUT0teXIDLSamfQPZMzfLF60=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 May 2026 16:57:36 GMT"
+          "Value": "Mon, 18 May 2026 17:46:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22773,7 +22773,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "h5oj11hhex"
+          "Value": "09gygg4dut"
         },
         {
           "Name": "label",
@@ -22781,12 +22781,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-7XhUF5E8NiW3T0V4coP8srUSWsZmLNLL8zXJSAUNGFg="
+          "Value": "sha256-3J3joJRRSW3sbI1g8rhqUT0teXIDLSamfQPZMzfLF60="
         }
       ]
     },
     {
-      "Route": "_framework/StudyAssistant.Web.nlfadd3pxw.pdb",
+      "Route": "_framework/StudyAssistant.Web.p6uln0um29.pdb",
       "AssetFile": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\bin\\Debug\\net9.0\\wwwroot\\_framework\\StudyAssistant.Web.pdb",
       "Selectors": [],
       "ResponseHeaders": [
@@ -22796,7 +22796,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "27112"
+          "Value": "33868"
         },
         {
           "Name": "Content-Type",
@@ -22804,11 +22804,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"e16RSNBjursNQQVFqLJlj7DdvXnBeMkfLIPVmq6TsCo=\""
+          "Value": "\"75y/DJ9s7VewWOugQWBXuRYZQkZ/brmyPOJqTiZq5XA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 May 2026 16:57:36 GMT"
+          "Value": "Mon, 18 May 2026 17:46:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22818,7 +22818,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "nlfadd3pxw"
+          "Value": "p6uln0um29"
         },
         {
           "Name": "label",
@@ -22826,18 +22826,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-e16RSNBjursNQQVFqLJlj7DdvXnBeMkfLIPVmq6TsCo="
+          "Value": "sha256-75y/DJ9s7VewWOugQWBXuRYZQkZ/brmyPOJqTiZq5XA="
         }
       ]
     },
     {
-      "Route": "_framework/StudyAssistant.Web.nlfadd3pxw.pdb",
-      "AssetFile": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\bufzqxrbwr-nlfadd3pxw.gz",
+      "Route": "_framework/StudyAssistant.Web.p6uln0um29.pdb",
+      "AssetFile": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\bufzqxrbwr-p6uln0um29.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000050324594"
+          "Quality": "0.000040503868"
         }
       ],
       "ResponseHeaders": [
@@ -22847,15 +22847,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19870"
+          "Value": "24688"
         },
         {
           "Name": "ETag",
-          "Value": "\"1iJDt+QKv+UOWdhlmrtsrR8mSjgG2fzyjL24m3L0gnw=\""
+          "Value": "\"3oDWztIBzEBxT3hLqveXgxgfQQO3bA5SUUhwk/o7xnc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 May 2026 16:57:36 GMT"
+          "Value": "Mon, 18 May 2026 17:46:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22875,13 +22875,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"e16RSNBjursNQQVFqLJlj7DdvXnBeMkfLIPVmq6TsCo=\""
+          "Value": "W/\"75y/DJ9s7VewWOugQWBXuRYZQkZ/brmyPOJqTiZq5XA=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "nlfadd3pxw"
+          "Value": "p6uln0um29"
         },
         {
           "Name": "label",
@@ -22889,13 +22889,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-e16RSNBjursNQQVFqLJlj7DdvXnBeMkfLIPVmq6TsCo="
+          "Value": "sha256-75y/DJ9s7VewWOugQWBXuRYZQkZ/brmyPOJqTiZq5XA="
         }
       ]
     },
     {
-      "Route": "_framework/StudyAssistant.Web.nlfadd3pxw.pdb.gz",
-      "AssetFile": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\bufzqxrbwr-nlfadd3pxw.gz",
+      "Route": "_framework/StudyAssistant.Web.p6uln0um29.pdb.gz",
+      "AssetFile": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\bufzqxrbwr-p6uln0um29.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22904,7 +22904,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19870"
+          "Value": "24688"
         },
         {
           "Name": "Content-Type",
@@ -22912,11 +22912,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1iJDt+QKv+UOWdhlmrtsrR8mSjgG2fzyjL24m3L0gnw=\""
+          "Value": "\"3oDWztIBzEBxT3hLqveXgxgfQQO3bA5SUUhwk/o7xnc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 May 2026 16:57:36 GMT"
+          "Value": "Mon, 18 May 2026 17:46:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22934,7 +22934,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "nlfadd3pxw"
+          "Value": "p6uln0um29"
         },
         {
           "Name": "label",
@@ -22942,7 +22942,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-1iJDt+QKv+UOWdhlmrtsrR8mSjgG2fzyjL24m3L0gnw="
+          "Value": "sha256-3oDWztIBzEBxT3hLqveXgxgfQQO3bA5SUUhwk/o7xnc="
         }
       ]
     },
@@ -22957,7 +22957,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "27112"
+          "Value": "33868"
         },
         {
           "Name": "Content-Type",
@@ -22965,11 +22965,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"e16RSNBjursNQQVFqLJlj7DdvXnBeMkfLIPVmq6TsCo=\""
+          "Value": "\"75y/DJ9s7VewWOugQWBXuRYZQkZ/brmyPOJqTiZq5XA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 May 2026 16:57:36 GMT"
+          "Value": "Mon, 18 May 2026 17:46:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22979,18 +22979,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-e16RSNBjursNQQVFqLJlj7DdvXnBeMkfLIPVmq6TsCo="
+          "Value": "sha256-75y/DJ9s7VewWOugQWBXuRYZQkZ/brmyPOJqTiZq5XA="
         }
       ]
     },
     {
       "Route": "_framework/StudyAssistant.Web.pdb",
-      "AssetFile": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\bufzqxrbwr-nlfadd3pxw.gz",
+      "AssetFile": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\bufzqxrbwr-p6uln0um29.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000050324594"
+          "Quality": "0.000040503868"
         }
       ],
       "ResponseHeaders": [
@@ -23000,15 +23000,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19870"
+          "Value": "24688"
         },
         {
           "Name": "ETag",
-          "Value": "\"1iJDt+QKv+UOWdhlmrtsrR8mSjgG2fzyjL24m3L0gnw=\""
+          "Value": "\"3oDWztIBzEBxT3hLqveXgxgfQQO3bA5SUUhwk/o7xnc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 May 2026 16:57:36 GMT"
+          "Value": "Mon, 18 May 2026 17:46:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23028,19 +23028,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"e16RSNBjursNQQVFqLJlj7DdvXnBeMkfLIPVmq6TsCo=\""
+          "Value": "W/\"75y/DJ9s7VewWOugQWBXuRYZQkZ/brmyPOJqTiZq5XA=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-e16RSNBjursNQQVFqLJlj7DdvXnBeMkfLIPVmq6TsCo="
+          "Value": "sha256-75y/DJ9s7VewWOugQWBXuRYZQkZ/brmyPOJqTiZq5XA="
         }
       ]
     },
     {
       "Route": "_framework/StudyAssistant.Web.pdb.gz",
-      "AssetFile": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\bufzqxrbwr-nlfadd3pxw.gz",
+      "AssetFile": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\bufzqxrbwr-p6uln0um29.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -23049,7 +23049,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19870"
+          "Value": "24688"
         },
         {
           "Name": "Content-Type",
@@ -23057,11 +23057,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1iJDt+QKv+UOWdhlmrtsrR8mSjgG2fzyjL24m3L0gnw=\""
+          "Value": "\"3oDWztIBzEBxT3hLqveXgxgfQQO3bA5SUUhwk/o7xnc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 May 2026 16:57:36 GMT"
+          "Value": "Mon, 18 May 2026 17:46:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23079,7 +23079,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-1iJDt+QKv+UOWdhlmrtsrR8mSjgG2fzyjL24m3L0gnw="
+          "Value": "sha256-3oDWztIBzEBxT3hLqveXgxgfQQO3bA5SUUhwk/o7xnc="
         }
       ]
     },
@@ -23094,7 +23094,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "28437"
+          "Value": "41237"
         },
         {
           "Name": "Content-Type",
@@ -23102,11 +23102,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"BZZmF0SqD3cT7em3wSp4IgE8SF6vGMGr/ZCqWI4ParQ=\""
+          "Value": "\"PKm7IJwOB5DtcpLAeYuYJUUAZvN6e6HoKn7b5XlWuEA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 May 2026 16:57:36 GMT"
+          "Value": "Mon, 18 May 2026 17:46:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23116,18 +23116,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-BZZmF0SqD3cT7em3wSp4IgE8SF6vGMGr/ZCqWI4ParQ="
+          "Value": "sha256-PKm7IJwOB5DtcpLAeYuYJUUAZvN6e6HoKn7b5XlWuEA="
         }
       ]
     },
     {
       "Route": "_framework/StudyAssistant.Web.wasm",
-      "AssetFile": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\63rt9u1i9a-h5oj11hhex.gz",
+      "AssetFile": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\63rt9u1i9a-09gygg4dut.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000078963992"
+          "Quality": "0.000056173464"
         }
       ],
       "ResponseHeaders": [
@@ -23137,15 +23137,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12663"
+          "Value": "17801"
         },
         {
           "Name": "ETag",
-          "Value": "\"7XhUF5E8NiW3T0V4coP8srUSWsZmLNLL8zXJSAUNGFg=\""
+          "Value": "\"3J3joJRRSW3sbI1g8rhqUT0teXIDLSamfQPZMzfLF60=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 May 2026 16:57:36 GMT"
+          "Value": "Mon, 18 May 2026 17:46:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23165,19 +23165,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"BZZmF0SqD3cT7em3wSp4IgE8SF6vGMGr/ZCqWI4ParQ=\""
+          "Value": "W/\"PKm7IJwOB5DtcpLAeYuYJUUAZvN6e6HoKn7b5XlWuEA=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-BZZmF0SqD3cT7em3wSp4IgE8SF6vGMGr/ZCqWI4ParQ="
+          "Value": "sha256-PKm7IJwOB5DtcpLAeYuYJUUAZvN6e6HoKn7b5XlWuEA="
         }
       ]
     },
     {
       "Route": "_framework/StudyAssistant.Web.wasm.gz",
-      "AssetFile": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\63rt9u1i9a-h5oj11hhex.gz",
+      "AssetFile": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\63rt9u1i9a-09gygg4dut.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -23186,7 +23186,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12663"
+          "Value": "17801"
         },
         {
           "Name": "Content-Type",
@@ -23194,11 +23194,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"7XhUF5E8NiW3T0V4coP8srUSWsZmLNLL8zXJSAUNGFg=\""
+          "Value": "\"3J3joJRRSW3sbI1g8rhqUT0teXIDLSamfQPZMzfLF60=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 May 2026 16:57:36 GMT"
+          "Value": "Mon, 18 May 2026 17:46:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23216,7 +23216,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-7XhUF5E8NiW3T0V4coP8srUSWsZmLNLL8zXJSAUNGFg="
+          "Value": "sha256-3J3joJRRSW3sbI1g8rhqUT0teXIDLSamfQPZMzfLF60="
         }
       ]
     },
@@ -71498,12 +71498,12 @@
     },
     {
       "Route": "css/app.css",
-      "AssetFile": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\2pxmo48srx-vd8zrqfalf.gz",
+      "AssetFile": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\2pxmo48srx-d2bgbzo6tw.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000368053000"
+          "Quality": "0.000297088532"
         }
       ],
       "ResponseHeaders": [
@@ -71513,15 +71513,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2716"
+          "Value": "3365"
         },
         {
           "Name": "ETag",
-          "Value": "\"UoUnNTyehCXDFYQpdeqNnjpWZ4SSyxN0GUtYUzbaeIU=\""
+          "Value": "\"8PoGf5e7JPm7EzoOaVbeSwXb+IB+kPo88IWhOsQ+8Mo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 May 2026 16:45:18 GMT"
+          "Value": "Mon, 18 May 2026 17:46:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -71541,13 +71541,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"MygTlfDlx2MKxH7pvrfibWGxxsyy4WvEUdLfhSUOSEU=\""
+          "Value": "W/\"BfNlcnUGR1dhoGQbh1DiJ2ooOYH9b7Y2PT4l9/hEWOw=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-MygTlfDlx2MKxH7pvrfibWGxxsyy4WvEUdLfhSUOSEU="
+          "Value": "sha256-BfNlcnUGR1dhoGQbh1DiJ2ooOYH9b7Y2PT4l9/hEWOw="
         }
       ]
     },
@@ -71562,7 +71562,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6718"
+          "Value": "10140"
         },
         {
           "Name": "Content-Type",
@@ -71570,11 +71570,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"MygTlfDlx2MKxH7pvrfibWGxxsyy4WvEUdLfhSUOSEU=\""
+          "Value": "\"BfNlcnUGR1dhoGQbh1DiJ2ooOYH9b7Y2PT4l9/hEWOw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 May 2026 16:45:18 GMT"
+          "Value": "Mon, 18 May 2026 17:46:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -71584,13 +71584,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-MygTlfDlx2MKxH7pvrfibWGxxsyy4WvEUdLfhSUOSEU="
+          "Value": "sha256-BfNlcnUGR1dhoGQbh1DiJ2ooOYH9b7Y2PT4l9/hEWOw="
         }
       ]
     },
     {
       "Route": "css/app.css.gz",
-      "AssetFile": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\2pxmo48srx-vd8zrqfalf.gz",
+      "AssetFile": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\2pxmo48srx-d2bgbzo6tw.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -71599,7 +71599,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2716"
+          "Value": "3365"
         },
         {
           "Name": "Content-Type",
@@ -71607,11 +71607,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"UoUnNTyehCXDFYQpdeqNnjpWZ4SSyxN0GUtYUzbaeIU=\""
+          "Value": "\"8PoGf5e7JPm7EzoOaVbeSwXb+IB+kPo88IWhOsQ+8Mo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 May 2026 16:45:18 GMT"
+          "Value": "Mon, 18 May 2026 17:46:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -71629,18 +71629,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-UoUnNTyehCXDFYQpdeqNnjpWZ4SSyxN0GUtYUzbaeIU="
+          "Value": "sha256-8PoGf5e7JPm7EzoOaVbeSwXb+IB+kPo88IWhOsQ+8Mo="
         }
       ]
     },
     {
-      "Route": "css/app.vd8zrqfalf.css",
-      "AssetFile": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\2pxmo48srx-vd8zrqfalf.gz",
+      "Route": "css/app.d2bgbzo6tw.css",
+      "AssetFile": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\2pxmo48srx-d2bgbzo6tw.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000368053000"
+          "Quality": "0.000297088532"
         }
       ],
       "ResponseHeaders": [
@@ -71650,15 +71650,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2716"
+          "Value": "3365"
         },
         {
           "Name": "ETag",
-          "Value": "\"UoUnNTyehCXDFYQpdeqNnjpWZ4SSyxN0GUtYUzbaeIU=\""
+          "Value": "\"8PoGf5e7JPm7EzoOaVbeSwXb+IB+kPo88IWhOsQ+8Mo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 May 2026 16:45:18 GMT"
+          "Value": "Mon, 18 May 2026 17:46:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -71678,13 +71678,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"MygTlfDlx2MKxH7pvrfibWGxxsyy4WvEUdLfhSUOSEU=\""
+          "Value": "W/\"BfNlcnUGR1dhoGQbh1DiJ2ooOYH9b7Y2PT4l9/hEWOw=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vd8zrqfalf"
+          "Value": "d2bgbzo6tw"
         },
         {
           "Name": "label",
@@ -71692,12 +71692,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-MygTlfDlx2MKxH7pvrfibWGxxsyy4WvEUdLfhSUOSEU="
+          "Value": "sha256-BfNlcnUGR1dhoGQbh1DiJ2ooOYH9b7Y2PT4l9/hEWOw="
         }
       ]
     },
     {
-      "Route": "css/app.vd8zrqfalf.css",
+      "Route": "css/app.d2bgbzo6tw.css",
       "AssetFile": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\wwwroot\\css\\app.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -71707,7 +71707,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6718"
+          "Value": "10140"
         },
         {
           "Name": "Content-Type",
@@ -71715,11 +71715,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"MygTlfDlx2MKxH7pvrfibWGxxsyy4WvEUdLfhSUOSEU=\""
+          "Value": "\"BfNlcnUGR1dhoGQbh1DiJ2ooOYH9b7Y2PT4l9/hEWOw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 May 2026 16:45:18 GMT"
+          "Value": "Mon, 18 May 2026 17:46:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -71729,7 +71729,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vd8zrqfalf"
+          "Value": "d2bgbzo6tw"
         },
         {
           "Name": "label",
@@ -71737,13 +71737,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-MygTlfDlx2MKxH7pvrfibWGxxsyy4WvEUdLfhSUOSEU="
+          "Value": "sha256-BfNlcnUGR1dhoGQbh1DiJ2ooOYH9b7Y2PT4l9/hEWOw="
         }
       ]
     },
     {
-      "Route": "css/app.vd8zrqfalf.css.gz",
-      "AssetFile": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\2pxmo48srx-vd8zrqfalf.gz",
+      "Route": "css/app.d2bgbzo6tw.css.gz",
+      "AssetFile": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\Debug\\net9.0\\compressed\\2pxmo48srx-d2bgbzo6tw.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -71752,7 +71752,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2716"
+          "Value": "3365"
         },
         {
           "Name": "Content-Type",
@@ -71760,11 +71760,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"UoUnNTyehCXDFYQpdeqNnjpWZ4SSyxN0GUtYUzbaeIU=\""
+          "Value": "\"8PoGf5e7JPm7EzoOaVbeSwXb+IB+kPo88IWhOsQ+8Mo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 May 2026 16:45:18 GMT"
+          "Value": "Mon, 18 May 2026 17:46:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -71782,7 +71782,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vd8zrqfalf"
+          "Value": "d2bgbzo6tw"
         },
         {
           "Name": "label",
@@ -71790,7 +71790,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-UoUnNTyehCXDFYQpdeqNnjpWZ4SSyxN0GUtYUzbaeIU="
+          "Value": "sha256-8PoGf5e7JPm7EzoOaVbeSwXb+IB+kPo88IWhOsQ+8Mo="
         }
       ]
     },

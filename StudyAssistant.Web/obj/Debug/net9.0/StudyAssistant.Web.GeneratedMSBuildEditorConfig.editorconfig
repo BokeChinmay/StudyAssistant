@@ -28,6 +28,10 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/chinm/Desktop/Summer Projects/StudyAssistant/StudyAssistant.Web/Components/FlashcardDeck.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGbGFzaGNhcmREZWNrLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/chinm/Desktop/Summer Projects/StudyAssistant/StudyAssistant.Web/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
