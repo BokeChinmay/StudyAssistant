@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zlNKUDA0044=",
+  "dgSpecHash": "p2MFbd2oey0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant.Web\\StudyAssistant.Web.csproj",
+  "projectFilePath": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\StudyAssistant.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chinm\\.nuget\\packages\\microsoft.aspnetcore.authorization\\9.0.0\\microsoft.aspnetcore.authorization.9.0.0.nupkg.sha512",
     "C:\\Users\\chinm\\.nuget\\packages\\microsoft.aspnetcore.components\\9.0.0\\microsoft.aspnetcore.components.9.0.0.nupkg.sha512",

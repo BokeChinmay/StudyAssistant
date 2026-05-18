@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "KimTtX5VAO69H/RbHrA3jv2RmOl6j49dl+uQR7BDefE=",
+  "Source": "StudyAssistant.Api",
+  "BasePath": "_content/StudyAssistant.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

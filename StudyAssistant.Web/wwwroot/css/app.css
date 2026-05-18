@@ -112,3 +112,78 @@ code {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
     text-align: start;
 }
+
+.chat-wrap {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.messages {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 1rem;
+}
+
+.msg { display: flex; }
+.msg.user { justify-content: flex-end; }
+.msg.assistant { justify-content: flex-start; }
+
+.bubble {
+    max-width: 75%;
+    padding: 10px 14px;
+    border-radius: 12px;
+    font-size: 15px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+.msg.user .bubble {
+    background: #534AB7;
+    color: #fff;
+    border-bottom-right-radius: 3px;
+}
+
+.msg.assistant .bubble {
+    background: #f0f0f0;
+    color: #1a1a1a;
+    border-bottom-left-radius: 3px;
+}
+
+.thinking { color: #999; font-style: italic; }
+
+.input-row {
+    display: flex;
+    gap: 8px;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e5e5;
+}
+
+.input-row input {
+    flex: 1;
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+.input-row input:focus { border-color: #534AB7; }
+
+.input-row button {
+    padding: 10px 20px;
+    background: #534AB7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.input-row button:disabled { background: #aaa; cursor: not-allowed; }

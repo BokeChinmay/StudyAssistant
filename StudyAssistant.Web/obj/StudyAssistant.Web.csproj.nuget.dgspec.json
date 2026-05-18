@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant.Web\\StudyAssistant.Web.csproj": {}
+    "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\StudyAssistant.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant.Web\\StudyAssistant.Web.csproj": {
+    "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\StudyAssistant.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant.Web\\StudyAssistant.Web.csproj",
+        "projectUniqueName": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\StudyAssistant.Web.csproj",
         "projectName": "StudyAssistant.Web",
-        "projectPath": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant.Web\\StudyAssistant.Web.csproj",
+        "projectPath": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\StudyAssistant.Web.csproj",
         "packagesPath": "C:\\Users\\chinm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant.Web\\obj\\",
+        "outputPath": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

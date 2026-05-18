@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\chinm\\StudyAssistant\\StudyAssistant.Api\\StudyAssistant.Api.csproj": {}
+    "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Api\\StudyAssistant.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\chinm\\StudyAssistant\\StudyAssistant.Api\\StudyAssistant.Api.csproj": {
+    "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Api\\StudyAssistant.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chinm\\StudyAssistant\\StudyAssistant.Api\\StudyAssistant.Api.csproj",
+        "projectUniqueName": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Api\\StudyAssistant.Api.csproj",
         "projectName": "StudyAssistant.Api",
-        "projectPath": "C:\\Users\\chinm\\StudyAssistant\\StudyAssistant.Api\\StudyAssistant.Api.csproj",
+        "projectPath": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Api\\StudyAssistant.Api.csproj",
         "packagesPath": "C:\\Users\\chinm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chinm\\StudyAssistant\\StudyAssistant.Api\\obj\\",
+        "outputPath": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -53,6 +53,10 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "Microsoft.AspNetCore.SignalR": {
+              "target": "Package",
+              "version": "[1.2.10, )"
             }
           },
           "imports": [

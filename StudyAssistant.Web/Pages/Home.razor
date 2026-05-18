@@ -1,7 +1,105 @@
 ﻿@page "/"
+@inject HttpClient Http
 
-<PageTitle>Home</PageTitle>
+<div class="chat-wrap">
+    <div class="messages" id="msgList">
+        @foreach (var msg in _messages)
+        {
+            <div class="msg @msg.Role">
+                <div class="bubble">@msg.Content</div>
+            </div>
+        }
+        @if (!string.IsNullOrEmpty(_streamBuffer))
+        {
+            <div class="msg assistant">
+                <div class="bubble">@_streamBuffer</div>
+            </div>
+        }
+        @if (_isStreaming && string.IsNullOrEmpty(_streamBuffer))
+        {
+            <div class="msg assistant">
+                <div class="bubble thinking">...</div>
+            </div>
+        }
+    </div>
 
-<h1>Hello, world!</h1>
+    <div class="input-row">
+        <input @bind="_input"
+               @bind:event="oninput"
+               @onkeydown="HandleKey"
+               placeholder="Ask me anything..."
+               disabled="@_isStreaming" />
+        <button @onclick="SendMessage" disabled="@_isStreaming">
+            @(_isStreaming ? "..." : "Send")
+        </button>
+    </div>
+</div>
 
-Welcome to your new app.
+@code {
+    private string _input = "";
+    private string _streamBuffer = "";
+    private bool _isStreaming = false;
+    private List<ChatMessage> _messages = new();
+
+    private async Task HandleKey(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter") await SendMessage();
+    }
+
+    private async Task SendMessage()
+    {
+        if (string.IsNullOrWhiteSpace(_input) || _isStreaming) return;
+
+        var userMsg = _input.Trim();
+        _messages.Add(new ChatMessage("user", userMsg));
+        _input = "";
+        _isStreaming = true;
+        _streamBuffer = "";
+        StateHasChanged();
+
+        try
+        {
+            var payload = new
+            {
+                Message = userMsg,
+                History = _messages.SkipLast(1).Select(m => new { m.Role, m.Content })
+            };
+
+            using var request = new HttpRequestMessage(HttpMethod.Post, "api/chat/stream")
+            {
+                Content = JsonContent.Create(payload)
+            };
+
+            using var response = await Http.SendAsync(request, HttpCompletionOption.ResponseHeadersRead);
+            using var stream = await response.Content.ReadAsStreamAsync();
+            using var reader = new StreamReader(stream);
+
+            while (!reader.EndOfStream)
+            {
+                var line = await reader.ReadLineAsync();
+                if (line?.StartsWith("data: ") != true) continue;
+
+                var token = line[6..];
+                if (token == "[DONE]") break;
+
+                _streamBuffer += token;
+                StateHasChanged();
+            }
+
+            if (!string.IsNullOrEmpty(_streamBuffer))
+                _messages.Add(new ChatMessage("assistant", _streamBuffer));
+        }
+        catch (Exception ex)
+        {
+            _messages.Add(new ChatMessage("assistant", $"[Error: {ex.Message}]"));
+        }
+        finally
+        {
+            _streamBuffer = "";
+            _isStreaming = false;
+            StateHasChanged();
+        }
+    }
+
+    private record ChatMessage(string Role, string Content);
+}
