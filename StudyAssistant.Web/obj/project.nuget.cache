@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "p2MFbd2oey0=",
+  "dgSpecHash": "6obsCWJ0EVI=",
   "success": true,
   "projectFilePath": "C:\\Users\\chinm\\Desktop\\Summer Projects\\StudyAssistant\\StudyAssistant.Web\\StudyAssistant.Web.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\chinm\\.nuget\\packages\\markdig\\1.2.0\\markdig.1.2.0.nupkg.sha512",
     "C:\\Users\\chinm\\.nuget\\packages\\microsoft.aspnetcore.authorization\\9.0.0\\microsoft.aspnetcore.authorization.9.0.0.nupkg.sha512",
     "C:\\Users\\chinm\\.nuget\\packages\\microsoft.aspnetcore.components\\9.0.0\\microsoft.aspnetcore.components.9.0.0.nupkg.sha512",
     "C:\\Users\\chinm\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\9.0.0\\microsoft.aspnetcore.components.analyzers.9.0.0.nupkg.sha512",

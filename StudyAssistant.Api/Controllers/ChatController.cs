@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using StudyAssistant.Api.Services;
+using StudyAssistant.Api.Models;
 using System.Text;
 using System.Text.Json;
 
@@ -8,11 +10,13 @@ public class ChatController : ControllerBase
 {
     private readonly IHttpClientFactory _httpFactory;
     private readonly IConfiguration _config;
+    private readonly ConversationService _conversation;
 
-    public ChatController(IHttpClientFactory httpFactory, IConfiguration config)
+    public ChatController(IHttpClientFactory httpFactory, IConfiguration config, ConversationService conversation)
     {
         _httpFactory = httpFactory;
         _config = config;
+        _conversation = conversation;
     }
 
     [HttpPost("stream")]
@@ -21,22 +25,23 @@ public class ChatController : ControllerBase
         Response.ContentType = "text/event-stream";
         Response.Headers["Cache-Control"] = "no-cache";
 
-        var messages = new List<object>
-        {
-            new { role = "system", content = "You are a focused study assistant. Help the user understand concepts clearly, generate flashcards on request, and quiz them on material they provide." }
-        };
+        var mode = _conversation.DetectMode(request.Message);
+        var session = _conversation.GetOrCreate(request.SessionID);
+        session.ActiveMode = mode;
 
-        foreach (var m in request.History)
-            messages.Add(new { role = m.Role, content = m.Content });
+        _conversation.AddMessage(request.SessionID, "user", request.Message);
 
-        messages.Add(new { role = "user", content = request.Message });
+        var messages = session.Messages.Select(m => new { role = m.Role, content = m.Content }).ToList<object>();
 
         var body = JsonSerializer.Serialize(new
         {
             model = "llama-3.3-70b-versatile",
             max_tokens = 1024,
             stream = true,
-            messages
+            messages = new List<object>
+            {
+                new { role = "system", content = PromptService.BuildSystemPrompt(mode) }
+            }.Concat(messages).ToList()
         });
 
         var http = _httpFactory.CreateClient();
@@ -53,6 +58,7 @@ public class ChatController : ControllerBase
             return;
         }
 
+        var fullResponse = new StringBuilder();
         using var stream = await response.Content.ReadAsStreamAsync();
         using var reader = new StreamReader(stream);
 
@@ -74,14 +80,19 @@ public class ChatController : ControllerBase
                 if (delta.TryGetProperty("content", out var content) &&
                     content.ValueKind == JsonValueKind.String)
                 {
-                    await Response.WriteAsync($"data: {content.GetString()}\n\n");
+                    var token = content.GetString()!;
+                    fullResponse.Append(token);
+                    var encoded = token.Replace("\n", "\\n").Replace("\r", "\\r");
+                    await Response.WriteAsync($"data: {encoded}\n\n");
                     await Response.Body.FlushAsync();
                 }
             }
             catch (JsonException) { continue; }
         }
+
+        _conversation.AddMessage(request.SessionID, "assistant", fullResponse.ToString());
     }
 }
 
-public record ChatRequest(string Message, List<MessageRecord> History);
-public record MessageRecord(string Role, string Content);
+// public record ChatRequest(string Message, List<MessageRecord> History);
+// public record MessageRecord(string Role, string Content);

@@ -1,3 +1,5 @@
+using StudyAssistant.Api.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -15,6 +17,10 @@ builder.Services.AddHttpClient();
 builder.Services.AddCors(options => {
     options.AddPolicy("BlazorClient", policy => policy.WithOrigins("http://localhost:5211").AllowAnyHeader().AllowAnyMethod().AllowCredentials());
 });
+
+builder.Services.AddMemoryCache();
+
+builder.Services.AddSingleton<ConversationService>();
 
 var app = builder.Build();
 

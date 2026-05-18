@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StudyAssistant.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b531534048331decbc9e704c5727dbe8d3f994ae")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+518a51f6432871707de7b17118747a36bdf369fe")]
 [assembly: System.Reflection.AssemblyProductAttribute("StudyAssistant.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StudyAssistant.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

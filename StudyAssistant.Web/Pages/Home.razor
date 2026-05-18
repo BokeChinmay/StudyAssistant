@@ -1,24 +1,45 @@
 ﻿@page "/"
 @inject HttpClient Http
+@using Markdig
 
 <div class="chat-wrap">
+    <div class="mode-bar">
+        <span class="mode-label">Session: @_sessionId[..8]…</span>
+        <div class="mode-hints">
+            <span class="hint">Try: "explain recursion"</span>
+            <span class="hint">or: "make flashcards on photosynthesis"</span>
+            <span class="hint">or: "quiz me on WW2"</span>
+        </div>
+    </div>
+
     <div class="messages" id="msgList">
         @foreach (var msg in _messages)
         {
             <div class="msg @msg.Role">
-                <div class="bubble">@msg.Content</div>
+                <div class="bubble">
+                    @if (msg.Role == "assistant")
+                    {
+                        @((MarkupString)RenderMarkdown(msg.Content))
+                    }
+                    else
+                    {
+                        @msg.Content
+                    }
+                </div>
             </div>
         }
         @if (!string.IsNullOrEmpty(_streamBuffer))
         {
             <div class="msg assistant">
-                <div class="bubble">@_streamBuffer</div>
+                <div class="bubble">
+                    @((MarkupString)RenderMarkdown(_streamBuffer))
+                </div>
             </div>
         }
         @if (_isStreaming && string.IsNullOrEmpty(_streamBuffer))
         {
             <div class="msg assistant">
-                <div class="bubble thinking">...</div>
+                <div class="bubble thinking">thinking…</div>
             </div>
         }
     </div>
@@ -27,10 +48,10 @@
         <input @bind="_input"
                @bind:event="oninput"
                @onkeydown="HandleKey"
-               placeholder="Ask me anything..."
+               placeholder="Ask me to explain, make flashcards, or quiz you…"
                disabled="@_isStreaming" />
         <button @onclick="SendMessage" disabled="@_isStreaming">
-            @(_isStreaming ? "..." : "Send")
+            @(_isStreaming ? "…" : "Send")
         </button>
     </div>
 </div>
@@ -39,7 +60,14 @@
     private string _input = "";
     private string _streamBuffer = "";
     private bool _isStreaming = false;
+    private string _sessionId = Guid.NewGuid().ToString();
     private List<ChatMessage> _messages = new();
+
+    private string RenderMarkdown(string text)
+    {
+        var pipeline = new MarkdownPipelineBuilder().UseAdvancedExtensions().Build();
+        return Markdown.ToHtml(text, pipeline);
+    }
 
     private async Task HandleKey(KeyboardEventArgs e)
     {
@@ -62,7 +90,7 @@
             var payload = new
             {
                 Message = userMsg,
-                History = _messages.SkipLast(1).Select(m => new { m.Role, m.Content })
+                SessionId = _sessionId
             };
 
             using var request = new HttpRequestMessage(HttpMethod.Post, "api/chat/stream")
@@ -70,7 +98,8 @@
                 Content = JsonContent.Create(payload)
             };
 
-            using var response = await Http.SendAsync(request, HttpCompletionOption.ResponseHeadersRead);
+            using var response = await Http.SendAsync(
+                request, HttpCompletionOption.ResponseHeadersRead);
             using var stream = await response.Content.ReadAsStreamAsync();
             using var reader = new StreamReader(stream);
 
@@ -82,7 +111,7 @@
                 var token = line[6..];
                 if (token == "[DONE]") break;
 
-                _streamBuffer += token;
+                _streamBuffer += token.Replace("\\n", "\n").Replace("\\r", "\r");
                 StateHasChanged();
             }
 
