@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\StudyAssistant.Api.props" />
-</Project>

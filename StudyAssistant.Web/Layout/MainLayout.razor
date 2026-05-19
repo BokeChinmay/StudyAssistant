@@ -1,16 +1,64 @@
 ﻿@inherits LayoutComponentBase
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
+@inject IJSRuntime JS
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+<div class="app-shell @(_dark ? "dark" : "")">
+    <nav class="app-nav">
+        <div class="nav-brand">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <rect x="1" y="1" width="9" height="9" rx="2" fill="currentColor" opacity="0.9"/>
+                <rect x="12" y="1" width="9" height="9" rx="2" fill="currentColor" opacity="0.5"/>
+                <rect x="1" y="12" width="9" height="9" rx="2" fill="currentColor" opacity="0.5"/>
+                <rect x="12" y="12" width="9" height="9" rx="2" fill="currentColor" opacity="0.9"/>
+            </svg>
+            <span class="nav-title">Study Assistant</span>
         </div>
-
-        <article class="content px-4">
-            @Body
-        </article>
+        <div class="nav-right">
+            <a href="/" class="nav-link">Chat</a>
+            <a href="/about" class="nav-link">About</a>
+            <button class="dark-toggle" @onclick="ToggleDark" title="Toggle dark mode">
+                @if (_dark)
+                {
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/>
+                        <line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                }
+                else
+                {
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                }
+            </button>
+        </div>
+    </nav>
+    <main class="app-main">
+        @Body
     </main>
 </div>
+
+@code {
+    private bool _dark = false;
+
+    private async Task ToggleDark()
+    {
+        _dark = !_dark;
+        await JS.InvokeVoidAsync("localStorage.setItem", "theme", _dark ? "dark" : "light");
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            var saved = await JS.InvokeAsync<string>("localStorage.getItem", "theme");
+            if (saved == "dark")
+            {
+                _dark = true;
+                StateHasChanged();
+            }
+        }
+    }
+}

@@ -32,16 +32,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGbGFzaGNhcmREZWNrLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chinm/Desktop/Summer Projects/StudyAssistant/StudyAssistant.Web/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+[C:/Users/chinm/Desktop/Summer Projects/StudyAssistant/StudyAssistant.Web/Pages/About.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/chinm/Desktop/Summer Projects/StudyAssistant/StudyAssistant.Web/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/chinm/Desktop/Summer Projects/StudyAssistant/StudyAssistant.Web/Pages/Weather.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/chinm/Desktop/Summer Projects/StudyAssistant/StudyAssistant.Web/_Imports.razor]
@@ -51,7 +47,3 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/chinm/Desktop/Summer Projects/StudyAssistant/StudyAssistant.Web/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-hfi0rxg865
-
-[C:/Users/chinm/Desktop/Summer Projects/StudyAssistant/StudyAssistant.Web/Layout/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-cumnnhalda

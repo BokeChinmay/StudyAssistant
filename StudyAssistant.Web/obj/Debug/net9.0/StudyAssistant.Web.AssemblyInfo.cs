@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StudyAssistant.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29153909b711818463cabaebcb4d0c26701d8b8c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+25145cd023524d18fc89f0cc3c6d61866c6b7fa1")]
 [assembly: System.Reflection.AssemblyProductAttribute("StudyAssistant.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StudyAssistant.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
