@@ -1,0 +1,80 @@
+/* /Layout/MainLayout.razor.rz.scp.css */
+.app-shell[b-ioawvdeulj] {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--text);
+    transition: background 0.2s, color 0.2s;
+}
+
+.app-nav[b-ioawvdeulj] {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 28px;
+    height: 56px;
+    background: var(--nav-bg);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(12px);
+}
+
+.nav-brand[b-ioawvdeulj] {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.nav-title[b-ioawvdeulj] { letter-spacing: -0.03em; }
+
+.nav-right[b-ioawvdeulj] {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.nav-link[b-ioawvdeulj] {
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-muted);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.15s, color 0.15s;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.nav-link:hover[b-ioawvdeulj] {
+    background: var(--hover);
+    color: var(--text);
+}
+
+.dark-toggle[b-ioawvdeulj] {
+    margin-left: 8px;
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text-muted);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.dark-toggle:hover[b-ioawvdeulj] {
+    background: var(--hover);
+    color: var(--text);
+}
+
+.app-main[b-ioawvdeulj] { flex: 1; }
