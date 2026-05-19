@@ -15,7 +15,7 @@ builder.Services.AddControllers();
 builder.Services.AddHttpClient();
 
 builder.Services.AddCors(options => {
-    options.AddPolicy("BlazorClient", policy => policy.WithOrigins("http://localhost:5211").AllowAnyHeader().AllowAnyMethod().AllowCredentials());
+    options.AddPolicy("BlazorClient", policy => policy.WithOrigins("http://localhost:5211", "https://bokechinmay.github.io").AllowAnyHeader().AllowAnyMethod().AllowCredentials());
 });
 
 builder.Services.AddMemoryCache();
