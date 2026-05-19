@@ -1,14 +1,14 @@
 {
   "mainAssemblyName": "StudyAssistant.Web",
   "resources": {
-    "hash": "sha256-JF/ltyfX2Rz5bzYgWsUftXWFju2IrnOp4tKw9zkb7kQ=",
+    "hash": "sha256-jWlBO3vA3K38Fsp9rEnqyT0B5F5PH+T/0SnyZKRP/cA=",
     "fingerprinting": {
       "Markdig.nrc7qedkyf.wasm": "Markdig.wasm",
       "Microsoft.AspNetCore.Components.90lqsrtx84.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Web.opxd1vx2ar.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
-      "Microsoft.AspNetCore.Components.WebAssembly.uv2wn7q5wa.wasm": "Microsoft.AspNetCore.Components.WebAssembly.wasm",
-      "Microsoft.Extensions.Configuration.ell6o7ap7i.wasm": "Microsoft.Extensions.Configuration.wasm",
-      "Microsoft.Extensions.Configuration.Abstractions.f9jq6u05xu.wasm": "Microsoft.Extensions.Configuration.Abstractions.wasm",
+      "Microsoft.AspNetCore.Components.WebAssembly.z0iqg7ojx0.wasm": "Microsoft.AspNetCore.Components.WebAssembly.wasm",
+      "Microsoft.Extensions.Configuration.139990tgu4.wasm": "Microsoft.Extensions.Configuration.wasm",
+      "Microsoft.Extensions.Configuration.Abstractions.qs6omf5526.wasm": "Microsoft.Extensions.Configuration.Abstractions.wasm",
       "Microsoft.Extensions.Configuration.Json.77nptesqpn.wasm": "Microsoft.Extensions.Configuration.Json.wasm",
       "Microsoft.Extensions.DependencyInjection.g8opmrm9gr.wasm": "Microsoft.Extensions.DependencyInjection.wasm",
       "Microsoft.Extensions.DependencyInjection.Abstractions.p7b5uiooiy.wasm": "Microsoft.Extensions.DependencyInjection.Abstractions.wasm",
@@ -39,7 +39,7 @@
       "System.Text.RegularExpressions.j6er9b9fd2.wasm": "System.Text.RegularExpressions.wasm",
       "System.Threading.lft1cknv3e.wasm": "System.Threading.wasm",
       "System.Private.CoreLib.yb0ybgjg2d.wasm": "System.Private.CoreLib.wasm",
-      "StudyAssistant.Web.qiairy735p.wasm": "StudyAssistant.Web.wasm",
+      "StudyAssistant.Web.miku78ykma.wasm": "StudyAssistant.Web.wasm",
       "dotnet.js": "dotnet.js",
       "dotnet.native.xsn1d6x2kd.js": "dotnet.native.js",
       "dotnet.native.vz0adxojrz.wasm": "dotnet.native.wasm",
@@ -70,9 +70,9 @@
       "Markdig.nrc7qedkyf.wasm": "sha256-naHsuxRdKA2IXPmX6WIykHtFxFdZ7kkp+LtqkdqHpNc=",
       "Microsoft.AspNetCore.Components.90lqsrtx84.wasm": "sha256-2eSi/0qvaqsZeaiAbTmvzPz0erS2jDYm5n0k7onfeRs=",
       "Microsoft.AspNetCore.Components.Web.opxd1vx2ar.wasm": "sha256-FAefu3YQNw6XITqg25YaxC4oPmkfGpf8Ssxrzjs0i2M=",
-      "Microsoft.AspNetCore.Components.WebAssembly.uv2wn7q5wa.wasm": "sha256-mqnFYbN8E19/dUXEiW9AAs8ub5Mxfyjwe5yOCk1FIIw=",
-      "Microsoft.Extensions.Configuration.ell6o7ap7i.wasm": "sha256-0iZA+rfvr3lLmK5V18g0LZCU41c3mbTL9jNYRoavdB0=",
-      "Microsoft.Extensions.Configuration.Abstractions.f9jq6u05xu.wasm": "sha256-AyL87FvJMf14Dcn8HeQ3n2veg/RQGVGCjfpJPt1RQC4=",
+      "Microsoft.AspNetCore.Components.WebAssembly.z0iqg7ojx0.wasm": "sha256-PVaP5YzQdKbdjZIa57naUbUBbTSiP389KnL/D6evnBs=",
+      "Microsoft.Extensions.Configuration.139990tgu4.wasm": "sha256-PQ8U07WetXFshiOj2fT4pceZeFnzOgnZvCMUmK415+E=",
+      "Microsoft.Extensions.Configuration.Abstractions.qs6omf5526.wasm": "sha256-lsXOoc8eKVmyHdAsPURgk8xUDuSksQ5f/8ByFC6fCfk=",
       "Microsoft.Extensions.Configuration.Json.77nptesqpn.wasm": "sha256-TUkUL2Leb3zmGe8ZZUHAzyb8vZoEzua1H8f8stc7xRw=",
       "Microsoft.Extensions.DependencyInjection.g8opmrm9gr.wasm": "sha256-EPey4pvx6aL8aj8zL05ip1ZJSUG7DjjOrtL9aPRDYPw=",
       "Microsoft.Extensions.DependencyInjection.Abstractions.p7b5uiooiy.wasm": "sha256-Ba5NdPQTvHVjnFX7kh/XyQIVNwfdoGXkKHF8w2H6PU0=",
@@ -101,7 +101,7 @@
       "System.Text.Json.u1hrqf31kj.wasm": "sha256-EvUo1A6z+JU4gxwz4NDgcKfslNTc6WXnJiTeGwWUT+4=",
       "System.Text.RegularExpressions.j6er9b9fd2.wasm": "sha256-dXrOGgVbXT7r4+9G6HRZC6Y+aD/5hVJRlaeF9b9f4KQ=",
       "System.Threading.lft1cknv3e.wasm": "sha256-vyg3Z1oOz5OBaH86c706q/stiD0xbr7fYZvXFdoWaZc=",
-      "StudyAssistant.Web.qiairy735p.wasm": "sha256-wvgXuFQi1Ud2uHIxin3pQnUQoUNwb7zaEAVnxSfui3g="
+      "StudyAssistant.Web.miku78ykma.wasm": "sha256-XmrJKW7mUAxR+QW3lFekaL+ybp3s8kx+HxA2Z2qZUd4="
     }
   },
   "cacheBootResources": true,
