@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "StudyAssistant.Web",
   "resources": {
-    "hash": "sha256-n1dKly+DQxUe0rUqalRuBRJwz+W3oTQzD0EYKZYeNbc=",
+    "hash": "sha256-9sol9bfITJI955h9kSdA47scXqANswpKNald0hchBQM=",
     "fingerprinting": {
       "Markdig.nrc7qedkyf.wasm": "Markdig.wasm",
       "Microsoft.AspNetCore.Components.90lqsrtx84.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -39,7 +39,7 @@
       "System.Text.RegularExpressions.j6er9b9fd2.wasm": "System.Text.RegularExpressions.wasm",
       "System.Threading.lft1cknv3e.wasm": "System.Threading.wasm",
       "System.Private.CoreLib.yb0ybgjg2d.wasm": "System.Private.CoreLib.wasm",
-      "StudyAssistant.Web.6ndvrulbz6.wasm": "StudyAssistant.Web.wasm",
+      "StudyAssistant.Web.e5sls1kt3g.wasm": "StudyAssistant.Web.wasm",
       "dotnet.js": "dotnet.js",
       "dotnet.native.xsn1d6x2kd.js": "dotnet.native.js",
       "dotnet.native.vz0adxojrz.wasm": "dotnet.native.wasm",
@@ -101,12 +101,15 @@
       "System.Text.Json.u1hrqf31kj.wasm": "sha256-EvUo1A6z+JU4gxwz4NDgcKfslNTc6WXnJiTeGwWUT+4=",
       "System.Text.RegularExpressions.j6er9b9fd2.wasm": "sha256-dXrOGgVbXT7r4+9G6HRZC6Y+aD/5hVJRlaeF9b9f4KQ=",
       "System.Threading.lft1cknv3e.wasm": "sha256-vyg3Z1oOz5OBaH86c706q/stiD0xbr7fYZvXFdoWaZc=",
-      "StudyAssistant.Web.6ndvrulbz6.wasm": "sha256-LmZy5QdFgbPX4zjmSxKpiJ34mJ2ak84K8C0+KlsFbG0="
+      "StudyAssistant.Web.e5sls1kt3g.wasm": "sha256-Pr56/+Syfn3DjIlplcJkuwLXbTRvODLH0/iQ9VSnqfA="
     }
   },
   "cacheBootResources": true,
   "debugLevel": 0,
   "linkerEnabled": true,
+  "appsettings": [
+    "../appsettings.json"
+  ],
   "globalizationMode": "sharded",
   "extensions": {
     "blazor": {}
