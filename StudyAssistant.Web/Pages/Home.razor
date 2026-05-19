@@ -13,6 +13,27 @@
         <span class="mode-badge mode-@_stats.ActiveMode.ToLower()">@_stats.ActiveMode</span>
     </div>
 
+    <div class="upload-bar">
+    <label class="upload-label">
+        <i class="upload-icon">📎</i>
+        <span>@(_uploading ? "Uploading..." : "Upload notes (.pdf or .txt)")</span>
+        <InputFile OnChange="HandleUpload" accept=".pdf,.txt" disabled="@_uploading" style="display:none" />
+    </label>
+    @if (_documents.Count > 0)
+    {
+        <div class="doc-pills">
+            @foreach (var doc in _documents)
+            {
+                <span class="doc-pill">@doc</span>
+            }
+        </div>
+    }
+    @if (!string.IsNullOrEmpty(_uploadMessage))
+    {
+        <span class="upload-msg">@_uploadMessage</span>
+    }
+</div>
+
     <div class="mode-hints">
         <span class="hint">explain a concept</span>
         <span class="hint">make flashcards on [topic]</span>
@@ -76,6 +97,9 @@
     private string _sessionId = Guid.NewGuid().ToString();
     private List<ChatMessage> _messages = new();
     private SessionStats _stats = new();
+    private bool _uploading = false;
+    private string _uploadMessage = "";
+    private List<string> _documents = new();
 
     private string RenderMarkdown(string text)
     {
@@ -169,6 +193,53 @@
             var result = await Http.GetFromJsonAsync<SessionStats>(
                 $"api/stats/{_sessionId}");
             if (result != null) _stats = result;
+            StateHasChanged();
+        }
+        catch { }
+    }
+
+    private async Task HandleUpload(InputFileChangeEventArgs e) {
+        _uploading = true;
+        _uploadMessage = "";
+        StateHasChanged();
+
+        try {
+            var file = e.File;
+            var maxSize= 10 * 1024 * 1024; // 10 MB limit
+
+            using var content = new MultipartFormDataContent();
+            using var stream = file.OpenReadStream(maxSize);
+            using var ms = new MemoryStream();
+            await stream.CopyToAsync(ms);
+            ms.Position = 0;
+
+            content.Add(new StringContent(_sessionId), "sessionId");
+            content.Add(new StreamContent(ms), "file", file.Name);
+
+            var response = await Http.PostAsync("api/document/upload", content);
+
+            if(response.IsSuccessStatusCode) {
+                _uploadMessage = $"✓ {file.Name} ready";
+                await RefreshDocuments();
+            }
+            else {
+                var error = await response.Content.ReadAsStringAsync();
+                _uploadMessage = $"✗ {error}";
+            }
+        }
+        catch (Exception ex) {
+            _uploadMessage = $"✗ {ex.Message}";
+        }
+        finally {
+            _uploading = false;
+            StateHasChanged();
+        }
+    }
+
+    private async Task RefreshDocuments() {
+        try {
+            var docs = await Http.GetFromJsonAsync<List<string>>($"api/document/list/{_sessionId}");
+            if (docs != null) _documents = docs;
             StateHasChanged();
         }
         catch { }

@@ -11,12 +11,14 @@ public class ChatController : ControllerBase
     private readonly IHttpClientFactory _httpFactory;
     private readonly IConfiguration _config;
     private readonly ConversationService _conversation;
+    private readonly DocumentService _documentService;
 
-    public ChatController(IHttpClientFactory httpFactory, IConfiguration config, ConversationService conversation)
+    public ChatController(IHttpClientFactory httpFactory, IConfiguration config, ConversationService conversation, DocumentService documentService)
     {
         _httpFactory = httpFactory;
         _config = config;
         _conversation = conversation;
+        _documentService = documentService;
     }
 
     [HttpPost("stream")]
@@ -48,9 +50,37 @@ public class ChatController : ControllerBase
 
         session.ActiveMode = mode;
 
+        //RAG: retrieve relevant ccontext if documents exist for this session
+        var ragContext = "";
+        var docNames = _documentService.GetDocumentNames(request.SessionID);
+
+        if(docNames.Count > 0) {
+            var retrieved = await _documentService.QueryAsync(request.SessionID, request.Message);
+            
+            if (retrieved.Count > 0) {
+                var contextBuilder = new StringBuilder();
+                contextBuilder.AppendLine("Relevant context from the user's uploaded documents:");
+                contextBuilder.AppendLine();
+
+                foreach (var ctx in retrieved) {
+                    contextBuilder.AppendLine($"[From {ctx.FileName}]");
+                    contextBuilder.AppendLine(ctx.Text);
+                    contextBuilder.AppendLine();
+                }
+
+                ragContext = contextBuilder.ToString();
+            }
+        }
+
         _conversation.AddMessage(request.SessionID, "user", request.Message);
 
         var messages = session.Messages.Select(m => new { role = m.Role, content = m.Content }).ToList<object>();
+
+        var systemPrompt = PromptService.BuildSystemPrompt(mode);
+
+        if(!string.IsNullOrEmpty(ragContext)) {
+            systemPrompt += $"\n\n{ragContext}\n\nAnswer using the context above where relevant. If the answer isn't in the context, say so and answer from general knowledge.";
+        }
 
         var body = JsonSerializer.Serialize(new
         {
@@ -59,7 +89,7 @@ public class ChatController : ControllerBase
             stream = true,
             messages = new List<object>
             {
-                new { role = "system", content = PromptService.BuildSystemPrompt(mode) }
+                new { role = "system", content = systemPrompt }
             }.Concat(messages).ToList()
         });
 

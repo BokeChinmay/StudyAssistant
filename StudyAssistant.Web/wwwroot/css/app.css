@@ -418,3 +418,48 @@ code {
     flex-wrap: wrap;
     margin-bottom: 10px;
 }
+
+.upload-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.upload-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: #666;
+    cursor: pointer;
+    padding: 5px 12px;
+    border: 1px dashed #ccc;
+    border-radius: 8px;
+    transition: border-color .15s;
+}
+
+.upload-label:hover { border-color: #534AB7; color: #534AB7; }
+
+.doc-pills {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.doc-pill {
+    font-size: 11px;
+    padding: 2px 10px;
+    background: #eeedfe;
+    color: #3c3489;
+    border-radius: 999px;
+}
+
+.upload-msg {
+    font-size: 12px;
+    color: #666;
+    margin-left: auto;
+}

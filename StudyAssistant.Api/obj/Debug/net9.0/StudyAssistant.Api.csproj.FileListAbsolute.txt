@@ -34,3 +34,10 @@ C:\Users\chinm\Desktop\Summer Projects\StudyAssistant\StudyAssistant.Api\obj\Deb
 C:\Users\chinm\Desktop\Summer Projects\StudyAssistant\StudyAssistant.Api\obj\Debug\net9.0\StudyAssistant.Api.pdb
 C:\Users\chinm\Desktop\Summer Projects\StudyAssistant\StudyAssistant.Api\obj\Debug\net9.0\StudyAssistant.Api.genruntimeconfig.cache
 C:\Users\chinm\Desktop\Summer Projects\StudyAssistant\StudyAssistant.Api\obj\Debug\net9.0\ref\StudyAssistant.Api.dll
+C:\Users\chinm\Desktop\Summer Projects\StudyAssistant\StudyAssistant.Api\bin\Debug\net9.0\UglyToad.PdfPig.Core.dll
+C:\Users\chinm\Desktop\Summer Projects\StudyAssistant\StudyAssistant.Api\bin\Debug\net9.0\UglyToad.PdfPig.DocumentLayoutAnalysis.dll
+C:\Users\chinm\Desktop\Summer Projects\StudyAssistant\StudyAssistant.Api\bin\Debug\net9.0\UglyToad.PdfPig.Fonts.dll
+C:\Users\chinm\Desktop\Summer Projects\StudyAssistant\StudyAssistant.Api\bin\Debug\net9.0\UglyToad.PdfPig.Package.dll
+C:\Users\chinm\Desktop\Summer Projects\StudyAssistant\StudyAssistant.Api\bin\Debug\net9.0\UglyToad.PdfPig.Tokenization.dll
+C:\Users\chinm\Desktop\Summer Projects\StudyAssistant\StudyAssistant.Api\bin\Debug\net9.0\UglyToad.PdfPig.Tokens.dll
+C:\Users\chinm\Desktop\Summer Projects\StudyAssistant\StudyAssistant.Api\bin\Debug\net9.0\UglyToad.PdfPig.dll
